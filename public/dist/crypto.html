@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <script src="crypto.js"></script>
+    <title>Crypto</title>
+</head>
+<body>
+    <div id="baldiv"  class="text-center font-bold text-3xl mt-52 text-black">
+        <p>Balance: <p id="balance" value="0">0</p> </p>
+    </div>
+         
+    <div class="text-center mt-32 font-bold text-5xl bg-gradient-to-r bg-clip-text text-transparent from-pink-400 via-yellow-300 to-purple-400 animate-text delay-0">
+        <p>Purchase crypto</p>
+    </div>
+    
+
+    <div id="BuyCrypto" class="grid grid-cols-4 gap-4 font-bold text-white mt-48 place-items-center ">
+    <button class="border-solid bg-purple-500 w-20 p-2 text-center" value="1" onclick="buyCrypto(1)">1</button>
+    <button class="border-solid bg-purple-500 w-20 p-2 text-center" value="5" onclick="buyCrypto(5)">5</button>
+    <button class="border-solid bg-purple-500 w-20 p-2 text-center" value="10" onclick="buyCrypto(10)">10</button>
+    <button class="border-solid bg-purple-500 w-20 p-2 text-center" value="20" onclick="buyCrypto(20)">20</button>
+    <button class="border-solid bg-purple-500 w-20 p-2 text-center" value="50" onclick="buyCrypto(50)">50</button>
+    <button class="border-solid bg-purple-500 w-20 p-2 text-center" value="100" onclick="buyCrypto(100)">100</button>
+    <button class="border-solid bg-purple-500 w-20 p-2 text-center" value="500" onclick="buyCrypto(500)">500</button>
+    <button class="border-solid bg-purple-500 w-20 p-2 text-center" value="1000" onclick="buyCrypto(1000)">1000</button>
+    </div>
+ 
+    <div class="text-center mt-32 font-bold text-5xl bg-gradient-to-r bg-clip-text text-transparent from-pink-400 via-yellow-300 to-purple-400 animate-text delay-0">
+        <p>Sell crypto</p>
+    </div>
+
+
+    <div id="BuyCrypto" class="grid grid-cols-4 gap-4 font-bold text-white mt-48 place-items-center ">
+        <button class="border-solid bg-red-500 w-20 p-2 text-center" value="1" onclick="sellCrypto(1)">1</button>
+        <button class="border-solid bg-red-500 w-20 p-2 text-center" value="5" onclick="sellCrypto(5)">5</button>
+        <button class="border-solid bg-red-500 w-20 p-2 text-center" value="10" onclick="sellCrypto(10)">10</button>
+        <button class="border-solid bg-red-500 w-20 p-2 text-center" value="20" onclick="sellCrypto(20)">20</button>
+        <button class="border-solid bg-red-500 w-20 p-2 text-center" value="50" onclick="sellCrypto(50)">50</button>
+        <button class="border-solid bg-red-500 w-20 p-2 text-center" value="100" onclick="sellCrypto(100)">100</button>
+        <button class="border-solid bg-red-500 w-20 p-2 text-center" value="500" onclick="sellCrypto(500)">500</button>
+        <button class="border-solid bg-red-500 w-20 p-2 text-center" value="1000" onclick="sellCrypto(1000)">1000</button>
+        </div>
+
+
+</body>
+</html>

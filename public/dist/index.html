@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwindas</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="absolute right-0 top-0">
+        <a href="ditto.html" class="text-9xl bg-gradient-to-r bg-pink-400 bg-clip-text text-transparent from-pink-400 to-purple-400 animate-text">Ditto</a>
+        <p class="ml-28 bg-gradient-to-r bg-pink-400 bg-clip-text text-transparent from-pink-400 to-purple-400 animate-text">(Click Me)</p>
+    </div>
+    <div class="bg-green-200 text-9xl font-semibold bg-gradient-to-r bg-clip-text text-transparent from-indigo-500 via-purple-500 to-pink-500 animate-text pb-5 pt-5 mt-60">
+        <p class="text-center">Cat generator</p>
+    </div>
+    <div class="flex justify-center gap-5">
+        <div  class="text-center">
+            <button id="openUploadWindow" class="bg-gradient-to-r from-blue-500 to-purple-500 hover:font-bold mt-5 mb-5 text-white border-black border-2 rounded-xl h-14 w-20" onclick="uploadfile()">
+                <span class="icon-[lets-icons--import]" style="width: 40px; height: 40px;"></span>
+            </button>
+        </div>
+        <div class="text-center">
+            <button class="bg-gradient-to-r from-green-400 to-blue-500 hover:font-bold mt-5 mb-5 text-white text-xl border-black border-2 rounded-xl h-14 w-36" onclick="spam()">Generate</button>
+        </div>
+        <div class="text-center">
+            <button class="bg-gradient-to-r from-pink-400 to-yellow-500 hover:font-bold mt-5 mb-5 text-white border-black border-2 rounded-xl h-14 w-20" onclick="window.location.reload();">
+                <span class="icon-[f7--gobackward]" style="width: 40px; height: 40px;"></span>
+            </button>
+        </div>
+    </div>
+     
+    <div id="uploadwindow" class="bg-black/80 w-full h-full top-0 left-0 right-0 bottom-0 absolute justify-center hidden" onclick="closePopup()">
+        <div id="dropzone" class="flex justify-center bg-white/5 border-dashed border-blue-300 border-2 mr-auto ml-auto h-72 w-96 mt-96" onclick="event.stopPropagation()">
+            <form id="upload" action="/upload">
+                <div class="text-white">
+                    Drop files here or click to upload
+                    <p class="flex justify-center mt-20 bg-red-500 font-bold text-2xl">Under Development!</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="Container" class="flex justify-between overflow-hidden ">
+    </div>
+    <div class="flex justify-center mt-5 mb-5">
+        <div>
+            <video autoplay muted loop>
+                <source src="chipi-chipi.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+        
+    <div id="Container2" class="flex justify-between overflow-hidden "></div>
+    
+</body>
+</html>
